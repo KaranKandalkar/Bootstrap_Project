@@ -13,13 +13,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
         integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-between ps-4 px-5">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark justify-content-between ps-4 px-5" style="position: fixed; top: 0; width: 100%; z-index: 1000;">
             <div class="navbar-brand fs-3 fw-bold ">
                 TechNova
             </div>
@@ -28,16 +30,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="nav">
-                    <div class="nav-item"><a href="" class="nav-link text-white">Home</a></div>
-                    <div class="nav-item"><a href="" class="nav-link text-white">Services</a></div>
-                    <div class="nav-item"><a href="" class="nav-link text-white">About</a></div>
-                    <div class="nav-item"><a href="" class="nav-link text-white">Contact</a></div>
+                    <div class="nav-item"><a href="#home" class="nav-link text-white">Home</a></div>
+                    <div class="nav-item"><a href="#services" class="nav-link text-white">Services</a></div>
+                    <div class="nav-item"><a href="#about" class="nav-link text-white">About</a></div>
+                    <div class="nav-item"><a href="#price" class="nav-link text-white">Price</a></div>
+                    <div class="nav-item"><a href="#team" class="nav-link text-white">Team</a></div>
+                    <div class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></div>
                 </div>
                 <div class="nav-item"><button class="btn btn-primary">Get Started</button></div>
             </div>
         </nav>
         <!-- Header Title -->
-        <div class="bg-primary">
+        <div id="home" class="bg-primary">
             <div class="row container py-5">
                 <div class="col-12 col-lg-7 text-white my-5 px-5">
                     <span class="badge bg-warning text-dark">Innovative Technology Solutions</span>
@@ -81,7 +85,7 @@
     </section>
 
     <!-- What we do -->
-    <section class="container">
+    <section id="services" class="container">
         <div class="text-center mt-5">
             <span class="badge bg-primary">Our Services</span>
             <h1>What We Do</h1>
@@ -90,7 +94,7 @@
 
         <div>
             <div class="row mt-3">
-                <div class="col-12 col-lg-4 shadow-sm rounded p-3">
+                <div class="col-12 col-lg-4 shadow-sm rounded p-3" data-aos="fade-up">
                     <div class="bg-primary d-inline-block fs-3 px-2 py-3 text-white rounded"><i
                             class="fa-solid fa-code"></i></div>
                     <h3 class="mt-3">Web Development</h3>
@@ -98,7 +102,7 @@
                     <button class="btn btn-outline-primary">Learn More</button>
                 </div>
 
-                <div class="col-12 col-lg-4 shadow-sm rounded p-3">
+                <div class="col-12 col-lg-4 shadow-sm rounded p-3" data-aos="fade-down">
                     <div class="bg-success d-inline-block fs-3 px-2 py-3 text-white rounded"><i
                             class="fa-solid fa-mobile"></i></div>
                     <h3 class="mt-3">Mobile App</h3>
@@ -106,7 +110,7 @@
                     <button class="btn btn-outline-success">Learn More</button>
                 </div>
 
-                <div class="col-12 col-lg-4 shadow-sm rounded p-3">
+                <div class="col-12 col-lg-4 shadow-sm rounded p-3" data-aos="fade-right">
                     <div class="bg-warning d-inline-block fs-3 px-2 py-3 text-white rounded"><i
                             class="fa-solid fa-chart-line"></i></div>
                     <h3 class="mt-3">Data Analytics</h3>
@@ -114,14 +118,14 @@
                     <button class="btn btn-outline-warning">Learn More</button>
                 </div>
 
-                <div class="col-12 col-lg-4 shadow-sm rounded p-3 mt-3">
+                <div class="col-12 col-lg-4 shadow-sm rounded p-3 mt-3" data-aos="fade-left">
                     <div class="bg-danger d-inline-block fs-3 px-2 py-3 text-white rounded"><i
                             class="fa-solid fa-shield-halved"></i></div>
                     <h3 class="mt-3">Cyber Security</h3>
                     <p>Protect your digital assets and data from cyber threats.</p>
                     <button class="btn btn-outline-danger">Learn More</button>
                 </div>
-                <div class="col-12 col-lg-4 shadow-sm rounded p-3 mt-3">
+                <div class="col-12 col-lg-4 shadow-sm rounded p-3 mt-3" data-aos="fade-up-left">
                     <div class="bg-info d-inline-block fs-3 px-2 py-3 text-white rounded"><i
                             class="fa-solid fa-cloud"></i></div>
                     <h3 class="mt-3">Cloud Solutions</h3>
@@ -129,7 +133,7 @@
                     <button class="btn btn-outline-info">Learn More</button>
                 </div>
 
-                <div class="col-12 col-lg-4 shadow-sm rounded p-3 mt-3">
+                <div class="col-12 col-lg-4 shadow-sm rounded p-3 mt-3" data-aos="fade-up-right">
                     <div class="bg-secondary d-inline-block fs-3 px-2 py-3 text-white rounded"><i
                             class="fa-solid fa-bullhorn"></i></div>
                     <h3 class="mt-3">Digital Marketing</h3>
@@ -141,16 +145,16 @@
     </section>
 
     <!-- About Us -->
-    <section class="container bg-light my-5">
+    <section id="about" class="container bg-light my-5">
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6" data-aos="flip-right">
                 <div class="bg-primary rounded rounded-4 text-white text-center p-5">
                     <i class="fa-solid fa-building display-1"></i>
                     <h2 class="mt-3">10+ Years of Innovation</h2>
                     <p>Helping businesses transform their digital presence.</p>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 p-3">
+            <div class="col-12 col-lg-6 p-3" data-aos="zoom-in">
                 <span class="badge bg-primary d-inline-block">ABOUT US</span>
                 <h2>We Turn Ideas Into Digital Products</h2>
                 <p class="lead">TechNova is a technology company focused on creating innovative and reliable digital
@@ -167,14 +171,14 @@
     </section>
 
     <!-- Price -->
-    <section class="container py-5">
+    <section id="price" class="container py-5">
         <div class="text-center">
             <span class="badge bg-primary">Pricing</span>
             <h2>Simple Pricing Plans</h2>
             <p>Choose the plan that fits your business.</p>
         </div>
         <div class="d-flex flex-wrap justify-content-center mt-5">
-            <div class="card flex-grow-1 text-center m-3" style="width: 250px;">
+            <div class="card flex-grow-1 text-center m-3" style="width: 250px;" data-aos="fade-down">
                 <div class="card-header">
                     <h2>Basic</h2>
                 </div>
@@ -189,7 +193,7 @@
                     <button class="btn btn-secondary w-100 mt-5">Choose Plan</button>
                 </div>
             </div>
-            <div class="card flex-grow-1 text-center m-3" style="width: 250px;">
+            <div class="card flex-grow-1 text-center m-3" style="width: 250px;" data-aos="fade-down">
                 <div class="card-header bg-primary">
                     <span class="badge bg-warning">Popular</span>
                     <h2 class="text-white">Professional</h2>
@@ -205,7 +209,7 @@
                     <button class="btn btn-primary w-100 mt-4">Choose Plan</button>
                 </div>
             </div>
-            <div class="card flex-grow-1 text-center m-3" style="width: 250px;">
+            <div class="card flex-grow-1 text-center m-3" style="width: 250px;" data-aos="fade-down">
                 <div class="card-header bg-dark">
                     <h2 class="text-white">Enterprise</h2>
                 </div>
@@ -224,7 +228,7 @@
     </section>
 
     <!-- Expert -->
-    <section class="container bg-light py-5">
+    <section id="team" class="container bg-light py-5" data-aos="zoom-in-up">
         <div class="text-center">
             <span class="badge bg-primary">OUR TEAM </span>
             <h2>Meet Our Experts</h2>
@@ -348,7 +352,7 @@
     </section>
 
     <!-- Form -->
-    <section class="bg-primary">
+    <section id="contact" class="bg-primary">
         <div class="container">
             <div class="row p-4">
                 <div class="col-12 col-lg-6 py-4 text-white ms-2">
@@ -414,10 +418,10 @@
                 </div>
                 <div>
                     <ul class="nav">
-                        <li class="nav-item"><a href="" class="nav-link text-white">Home</a></li>
-                        <li class="nav-item"><a href="" class="nav-link text-white">Services</a></li>
-                        <li class="nav-item"><a href="" class="nav-link text-white">About</a></li>
-                        <li class="nav-item"><a href="" class="nav-link text-white">Contact</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link text-white">Services</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -431,3 +435,6 @@
 </body>
 
 </html>
+<script>
+    AOS.init();
+</script>
